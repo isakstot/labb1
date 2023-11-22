@@ -7,8 +7,8 @@ namespace Labb1
         static void Main(string[] args)
         {
             int nOfPeople = 4;
-            string[] person = new string[nOfPeople];
-            int[] age = new int[nOfPeople];
+            string[] personName = new string[nOfPeople];
+            int[] personAge = new int[nOfPeople];
 
             for (int i = 0; i < nOfPeople; i++)
             {
@@ -52,4 +52,4 @@ namespace Labb1
             }
         }
     }
-} 
+}
