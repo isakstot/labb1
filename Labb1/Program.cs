@@ -13,18 +13,18 @@ namespace Labb1
             for (int i = 0; i < nOfPeople; i++)
             {
                 Console.Write("Skriv namnet på person " + (i + 1) + ": ");
-                person[i] = Console.ReadLine();
+                personName[i] = Console.ReadLine();
                 Console.Write("Skriv åldern på person " + (i + 1) + ": ");
-                age[i] = Int32.Parse(Console.ReadLine());
+                personAge[i] = Int32.Parse(Console.ReadLine());
             }
             
             for (int i = 0; i < nOfPeople; i++)
             {
-                Console.WriteLine(person[i] + " är " + age[i] + " år gammal.");
+                Console.WriteLine(personName[i] + " är " + personAge[i] + " år gammal.");
             }
             
-            int totalAge = CalculateTotal(age);
-            double averageAge = CalculateAverage(age);
+            int totalAge = CalculateTotal(personAge);
+            double averageAge = CalculateAverage(personAge);
 
             Console.WriteLine($"Sammanlagd ålder: {totalAge}");
             Console.WriteLine($"Medelålder: {averageAge:F2}");
